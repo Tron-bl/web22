@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Diseña tu camiseta | 1H Deportes</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="topbar">
+    <div class="top-info"><span>🚚</span> Envíos a toda Colombia <span class="shield">✓</span> Pagos seguros</div>
+    <div class="socials">◎　♪　▶　f</div>
+  </div>
+
+  <header class="site-header">
+    <a class="brand" href="index.html" aria-label="1H Deportes">
+    </a>
+    <nav>
+             <a class="header-logo" href="#inicio"><span class="brand-mark"></span> <img src="logos/Logotipo UH negro geométrico.png" alt="Logo 1h deportes" width="120px"></a>
+        <button class="menu-toggle" id="menuToggle" aria-label="Abrir menú">☰</button>
+        <nav id="mainNav">
+            <a href="https://tron-bl.github.io/u1hweb/#Inicio">Inicio</a><a href="https://tron-bl.github.io/u1hweb/#categorias">Categorías</a><a href="https://tron-bl.github.io/u1hweb/#productos">Productos</a><a
+                href="https://tron-bl.github.io/u1hweb/#ofertas">Ofertas</a><a href="https://tron-bl.github.io/u1hweb/#nosotros">Nosotros</a><a href="https://tron-bl.github.io/u1hweb/#contacto">Contacto</a><a href="https://tron-bl.github.io/u1hweb/#personalizar">Personalizar</a>
+        </nav>
+    </nav>
+    <label class="search"><input type="search" placeholder="Buscar productos..." aria-label="Buscar productos"><button type="button" aria-label="Buscar">⌕</button></label>
+    <button class="cart-button" id="cartButton" type="button" aria-label="Ver carrito">🛒 <span id="cartCount">0</span></button>
+  </header>
+
+  <main id="personalizar" class="builder">
+    <a class="back-link" href="https://tron-bl.github.io/u1hweb/#Volver a la tienda">← <span>Volver a la tienda</span></a>
+
+    <section class="product-side">
+      <div class="intro">
+        <h1>DISEÑA <em>TU CAMISETA</em></h1>
+        <p>Personaliza tu uniforme y lleva tu equipo al siguiente nivel</p>
+      </div>
+
+      <div class="thumbs" aria-label="Vistas de la camiseta">
+        <button class="thumb selected" type="button" data-view="front" aria-label="Vista frontal">👕<small>FRENTE</small></button>
+        <button class="thumb" type="button" data-view="back" aria-label="Vista posterior">🔢<small>ESPALDA</small></button>
+        <button class="thumb" type="button" data-view="side" aria-label="Vista lateral">◩<small>LATERAL</small></button>
+        <button class="thumb" type="button" data-view="detail" aria-label="Detalle de tela">▧<small>DETALLE</small></button>
+      </div>
+
+      <div class="shirt-stage">
+        <div class="glow"></div>
+        <svg class="shirt-svg" viewBox="0 0 500 560" role="img" aria-label="Vista previa de camiseta deportiva">
+          <defs>
+            <linearGradient id="fabric" x1="0" y1="0" x2="1" y2="1">
+              <stop offset="0" stop-color="#333"/>
+              <stop offset=".48" stop-color="#101010"/>
+              <stop offset="1" stop-color="#292929"/>
+            </linearGradient>
+            <pattern id="diagonal" width="22" height="22" patternUnits="userSpaceOnUse" patternTransform="rotate(35)">
+              <rect width="22" height="22" fill="transparent"/>
+              <path d="M0 0V22" stroke="#fff" stroke-opacity=".22" stroke-width="8"/>
+            </pattern>
+          </defs>
+          <path id="shirtShape" d="M158 62 207 35 Q250 75 293 35 L342 62 455 132 399 230 350 198 365 500 Q250 540 135 500 L150 198 101 230 45 132Z" fill="url(#fabric)" stroke="#555" stroke-width="3"/>
+          <path id="shirtPattern" d="M158 62 207 35 Q250 75 293 35 L342 62 455 132 399 230 350 198 365 500 Q250 540 135 500 L150 198 101 230 45 132Z" fill="none"/>
+          <path d="M207 35 Q250 75 293 35" fill="none" stroke="#84e600" stroke-width="15"/>
+          <path d="M158 62 101 230 M342 62 399 230" fill="none" stroke="#84e600" stroke-width="8" opacity=".85"/>
+          <path d="M150 198 135 500 Q250 540 365 500 L350 198" fill="none" stroke="#777" stroke-opacity=".35" stroke-width="3"/>
+          <text id="brandPrint" x="195" y="205" fill="#fff" font-size="27" font-weight="900" text-anchor="middle">1H</text>
+          <text id="teamPrint" x="250" y="300" fill="#fff" font-size="31" font-weight="900" text-anchor="middle">TU EQUIPO</text>
+          <text id="numberPrint" x="250" y="395" fill="#fff" font-size="80" font-weight="900" text-anchor="middle">10</text>
+          <text id="backNamePrint" x="250" y="230" fill="#fff" font-size="24" font-weight="900" text-anchor="middle" opacity="0">JUGADOR</text>
+        </svg>
+        <div class="stage-caption">VISTA PREVIA EN TIEMPO REAL</div>
+      </div>
+
+      <div class="benefits">
+        
+        <div><b>♢</b><strong>Calidad profesional</strong></div>
+        <div><b>♟</b><strong>Para equipos y grupos</strong></div>
+      </div>
+    </section>
+
+    <section class="config-panel">
+      <div class="step">
+        <h2><span>1</span> Color de la camiseta</h2>
+        <div class="swatches">
+          <button class="swatch selected" style="--swatch:#111" data-color="#111111" aria-label="Negro"></button>
+          <button class="swatch" style="--swatch:#f4f4f4" data-color="#f4f4f4" aria-label="Blanco"></button>
+          <button class="swatch" style="--swatch:#1239d8" data-color="#1239d8" aria-label="Azul"></button>
+          <button class="swatch" style="--swatch:#e50920" data-color="#e50920" aria-label="Rojo"></button>
+          <button class="swatch" style="--swatch:#f4d000" data-color="#f4d000" aria-label="Amarillo"></button>
+          <button class="swatch" style="--swatch:#5511a5" data-color="#5511a5" aria-label="Morado"></button>
+          <button class="swatch" style="--swatch:#f36a0b" data-color="#f36a0b" aria-label="Naranja"></button>
+          <button class="swatch" style="--swatch:#087b42" data-color="#087b42" aria-label="Verde"></button>
+          <button class="swatch" style="--swatch:#e94d91" data-color="#e94d91" aria-label="Rosado"></button>
+          <button class="swatch" style="--swatch:#37bde0" data-color="#37bde0" aria-label="Celeste"></button>
+        </div>
+      </div>
+
+      <div class="step">
+        <h2><span>2</span> Selecciona un estampado</h2>
+        <div class="patterns">
+          <button class="pattern selected" data-pattern="none" aria-label="Sin estampado"><i class="p-none"></i></button>
+          <button class="pattern" data-pattern="diagonal" aria-label="Rayas diagonales"><i class="p-diagonal"></i></button>
+          <button class="pattern" data-pattern="vertical" aria-label="Rayas verticales"><i class="p-vertical"></i></button>
+          <button class="pattern" data-pattern="chevron" aria-label="Zigzag"><i class="p-chevron"></i></button>
+          <button class="pattern" data-pattern="blocks" aria-label="Geométrico"><i class="p-blocks"></i></button>
+          <button class="pattern" data-pattern="stars" aria-label="Estrellas"><i class="p-stars">★ ★<br>★ ★ ★</i></button>
+          <button class="pattern" data-pattern="half" aria-label="Mitad"><i class="p-half"></i></button>
+        </div>
+      </div>
+
+      <div class="step">
+        <h2><span>3</span> Personaliza el nombre del equipo o frase</h2>
+        <div class="text-field"><input id="teamName" maxlength="22" placeholder="Ej: Los Titanes, Tu Equipo..."><b>Aa</b></div>
+      </div>
+
+      <div class="step">
+        <h2><span>4</span> Tipo de uniforme</h2>
+        <div class="types">
+          <button class="type selected" data-type="Fútbol de barrio" data-price="49900">⚽ <span>Fútbol de Barrio</span></button>
+          <button class="type" data-type="Microfútbol" data-price="49900">⚽ <span>Microfútbol</span></button>
+  
+      </div>
+
+      <div class="step players-step">
+        <h2><span>5</span> Agrega los jugadores</h2>
+        <div class="player-head"><span>Nombre</span><span>Número</span><span>Talla</span><span></span></div>
+        <div id="players"></div>
+        <button class="add-player" id="addPlayer" type="button">＋ Agregar jugador</button>
+      </div>
+
+      <div class="price-bar">
+        <div class="unit-price"><span>👕</span><div>Precio por uniforme:<strong id="unitPrice">$49.900 COP</strong></div></div>
+        <div class="total-price"><span>Total del equipo:</span><strong id="totalPrice">$99.800 COP</strong></div>
+        <button class="add-cart" id="addToCart" type="button">🛒 <span>Agregar pedido al carrito</span></button>
+      </div>
+    </section>
+  </main>
+
+  <footer class="bottom-note">
+    <span>ⓘ　Los precios pueden variar según el estampado, nombre y número.</span>
+    <strong>🛡　Diseño 100% personalizado</strong>
+  </footer>
+
+  <div class="toast" id="toast" role="status">¡Pedido agregado al carrito!</div>
+  <script src="script.js"></script>
+</body>
+</html>
